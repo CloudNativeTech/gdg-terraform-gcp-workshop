@@ -27,3 +27,9 @@ resource "google_project_service" "gcp_services" {
 
   disable_dependent_services = true
 }
+
+# Creates a GCS bucket to store tfstate.
+resource "google_storage_bucket" "tfstate" {
+  name     = "${google_project.demo_project.project_id}-tfstate"
+  location = var.region
+}
