@@ -32,4 +32,5 @@ resource "google_project_service" "gcp_services" {
 resource "google_storage_bucket" "tfstate" {
   name     = "${google_project.demo_project.project_id}-tfstate"
   location = var.region
+  project  = google_project.demo_project.project_id
 }
