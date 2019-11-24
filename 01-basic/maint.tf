@@ -1,11 +1,11 @@
 # Set google provider with project name.
 provider "google" {
-  project = "golden-manifest-258408"
+  project = "my-project-name" # Update: unique project id.
   region  = "europe-west2"
 }
 
 # Creates a GCS bucket.
 resource "google_storage_bucket" "my_bucket" {
-  name     = "cloud-bucket-23678"
+  name     = "my-gcs-bucket" # Update: Unique bucket name
   location = "europe-west2"
 }
