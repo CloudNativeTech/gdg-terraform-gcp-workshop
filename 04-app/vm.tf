@@ -1,3 +1,4 @@
+# Creates a GCP VM Instance.
 resource "google_compute_instance" "vm" {
   name         = var.name
   machine_type = var.machine_type
@@ -21,9 +22,9 @@ resource "google_compute_instance" "vm" {
   metadata_startup_script = data.template_file.nginx.rendered
 
   service_account {
-    scopes = ["cloud-platform"]
+    email  = google_service_account.storage.email
+    scopes = ["storage-rw"]
   }
-
   depends_on = [google_storage_bucket_object.webpage]
 }
 
@@ -36,4 +37,5 @@ data "template_file" "nginx" {
     bucket_name     = google_storage_bucket.config.name
     webpage_path    = local.webpage_path
   }
+
 }
