@@ -37,7 +37,7 @@ terraform --help
 ## How to install Google Cloud SDK?
 1. Set the directory for `google-cloud-sdk`.
 ```
-export $GCLOUD_PATH=$HOME
+export GCLOUD_PATH=$HOME
 ```
 **NOTE:** You can change from `$HOME` to any directory path you want.
 
