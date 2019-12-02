@@ -62,6 +62,11 @@ tar -zxvf google-cloud-sdk.tar.gz
 ./google-cloud-sdk/install.sh
 ```
 
+5. Reload Shell.
+```
+exec -l $SHELL
+```
+
 ## How to initialize Google Cloud SDK?
 1. Initialize the SDK.
 ```
