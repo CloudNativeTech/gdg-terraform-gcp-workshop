@@ -59,7 +59,7 @@ tar -zxvf google-cloud-sdk.tar.gz
 
 4. Run `install.sh` script to add Google Cloud SDK to your path.
 ```
-./google-cloud-sdk/isntall.sh
+./google-cloud-sdk/install.sh
 ```
 
 ## How to initialize Google Cloud SDK?
