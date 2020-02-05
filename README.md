@@ -131,7 +131,7 @@ Run following command to revoke GCP credential from command-line.s
   ```bash
   $> gcloud auth revoke
   ```
-<br><br>
+
 
 ##### Note: Always remember to **cleanup resources** when **NOT** needed to avoid additional charges.
 
