@@ -134,3 +134,6 @@ Run following command to revoke GCP credential from command-line.s
 <br><br>
 
 ##### Note: Always remember to **cleanup resources** when **NOT** needed to avoid additional charges.
+
+## LICENSE
+Please see [LICENSE.txt](LICENSE.txt)
